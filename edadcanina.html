@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edad mascota</title>
+</head>
+<body>
+    
+    <script>
+        var edadH = prompt("Años de edad de su mascota");
+        edadMascota(edadH);
+
+        function edadMascota(edad)
+        {  
+            var n = edad * 7;
+            alert(`Su mascota tiene ${n} años en edad canina`);
+        }
+    </script>
+
+    <?php
+    	class Mascota {
+        	public static function calcularEdadCanina($edadHumana) {
+            	$edadCanina = $edadHumana * 7;
+            	echo "Su mascota tiene $edadCanina años en edad canina";
+        	}
+    	}
+    	$edadHumana = 5; // Cambia esta edad por la de tu mascota
+    	Mascota::calcularEdadCanina($edadHumana);
+    ?>
+
+
+
+</body>
+</html>
